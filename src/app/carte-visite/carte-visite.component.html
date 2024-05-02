@@ -1,0 +1,26 @@
+<!-- src/app/carte-visite/carte-visite.component.html -->
+
+<form (ngSubmit)="onSubmit()">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" [(ngModel)]="carteVisite.nom"><br>
+    <label for="prenom">Prenom:</label>
+    <input type="text" id="nom" name="nom" [(ngModel)]="carteVisite.prenom"><br>
+    <label for="entreprise">entreprise:</label>
+    <input type="text" id="entreprise" name="entreprise" [(ngModel)]="carteVisite.entreprise"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="carteVisite.email"><br>
+    <label for="tel">telephone:</label>
+    <input type="tel" id="tel" name="telephone" [(ngModel)]="carteVisite.telephone"><br>
+    <!-- Ajoutez d'autres champs pour les données de la carte visite -->
+    <button type="submit">Enregistrer</button>
+    </form>
+    <!-- src/app/carte-visite/carte-visite.component.html -->
+    <div>
+        <h2>Carte Visite</h2>
+        <p>Nom: {{ carteVisite.nom }}</p>
+        <p>Prenom: {{ carteVisite.prenom }}</p>
+        <p>Entreprise: {{ carteVisite.entreprise }}</p>
+        <p>Email: {{ carteVisite.email}}</p>
+        <p>Telephone: {{ carteVisite.telephone}}</p>
+        <!-- Affichez les autres données de la carte visite -->
+        </div>
